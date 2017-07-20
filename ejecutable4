@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p "Give a number" num
+
+if ((num==10)); then
+	echo "Your number equals 10"
+fi
+
+if ((num > 10)); then
+	echo "It is greater than 10"
+else
+	echo "It is less than ten"
+fi
+
+

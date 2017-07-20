@@ -1,0 +1,21 @@
+#!/bin/bash
+
+getSum(){
+	local num3=1
+	local num4=2
+	# si pusiesemos
+	# local num3=$1
+	# local num4=$2
+	# las variables num3 y num4 guardan los parametros 1 y 2 pasados
+
+	local sum=$((num3+num4))
+	echo $sum
+}
+
+num5=6
+num7=8
+
+#Se le puede pasar argumentos a una funcion y que no haga nada, no tira error
+
+sum=$(getSum num5 num7)
+echo $sum

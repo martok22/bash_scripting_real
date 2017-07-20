@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#esto es un comentario
+
+#esto es una variable con una string.
+
+#hacer esto
+#nombre = 'Martin'
+#cause error por el espacio entre el igual y la variable
+
+myName2="sonso"
+myName="Martin"
+
+declare -r NUM1=5
+
+num2=4
+
+num3=$((NUM1+num2))
+
+echo $num3
+echo $myName2
+echo 'esto es un ejecutable';
+
+num4=$('esto es un mensaje')
+
+date
+
+name="Derek"
+
+demLocal(){
+	local name="Jorge"
+	return 
+}
+
+demLocal
+
+echo "$name"
+
+echo $num4
+num5=NUM1
+echo $num5
+num6=$NUM1
+echo $num6
+echo num6
+echo "$num6"
+# \ special operator, putting it before double quotes means that they're
+# interpreted literally
+echo \"hola\"
